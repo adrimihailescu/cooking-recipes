@@ -1,22 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
-import Navbar from "../components/Navbar"
+import Layout from "../components/Layout"
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <nav>
-        <Link to="/">home</Link>
-        <Link to="/about">about</Link>
-      </nav>
+    <Layout>
+      <h1>Home page!</h1>
       <div>
-        <h1>Hello world!</h1>
         <Link to="/about">about</Link>
       </div>
       <div>
         <Link to="/company/history">history</Link>
       </div>
-    </div>
+    </Layout>
   )
 }
