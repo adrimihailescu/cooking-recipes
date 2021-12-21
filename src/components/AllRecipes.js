@@ -3,6 +3,9 @@ import RecipesList from "./RecipesList"
 import TagsList from "./TagsList"
 import { graphql, useStaticQuery } from "gatsby"
 
+//The content model in Contentful : Recipe with it's fields
+//getting the graphql query for allContentfulRecipe( all our recipes)
+
 const query = graphql`
   {
     allContentfulRecipe(sort: { fields: title, order: ASC }) {
