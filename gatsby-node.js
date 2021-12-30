@@ -14,6 +14,8 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
+  //programatically creating pages for each tag
+
   result.data.allContentfulRecipe.nodes.forEach(recipe => {
     recipe.content.tags.forEach(tag => {
       createPage({
